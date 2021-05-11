@@ -14,7 +14,31 @@ namespace MedidorTraficoyMedidorConsumoModel.DAL
         public List<MedidorConsumo> GetAll()
         {
             List<MedidorConsumo> medidorconsumos = new List<MedidorConsumo>();
+            try
+            {
+                using (StreamReader reader = new StreamReader(archivo))
+                {
+                    string texto = null;
+                    do
+                    {
+                        texto = reader.ReadLine();
+                        if (texto != null)
+                        {
+                            string[] textoArray = texto.Split(';');
+                            MedidorConsumo m = new MedidorConsumo()
+                            {
+                                Id = textoArray[0],
+                                Consumo = textoArray[1]
+                            };
+                            medidorconsumos.Add(m);
+                        }
+                    } while (texto != null);
+                }
 
+            }catch (IOException ex)
+            {
+                medidorconsumos = null;
+            }
 
             return medidorconsumos;
         }
