@@ -10,9 +10,25 @@ namespace MedidorTraficoyMedidorConsumoModel.DAL
 {
     public class MedidorConsumosArchivos : IMedidorConsumosDAL
     {
+        private MedidorConsumosArchivos()
+        {
+
+        }
+        private static IMedidorConsumosDAL instancia;
+
+        public static IMedidorConsumosDAL GetIntancia()
+        {
+            if(instancia == null)
+            {
+                instancia = new MedidorConsumosArchivos();
+            }
+            return instancia;
+        }
+
         private string archivo = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "consumos.txt";
         public List<MedidorConsumo> GetAll()
         {
+        
             List<MedidorConsumo> medidorconsumos = new List<MedidorConsumo>();
             try
             {

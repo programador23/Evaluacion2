@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MedidorTraficoyMedidorConsumoModel.DAL
 {
-    public class MedidorTraficoDALFactory
+   public class MedidorConsumosDALFactory
     {
-        public static IMedidorTraficoDAL createDal()
+        public static IMedidorConsumosDAL createDal()
         {
-            return MedidorTraficoArchivos.GetInstancia();
+            return MedidorConsumosArchivos.GetIntancia();
         }
     }
 }
