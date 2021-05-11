@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedidorTraficoyMedidorConsumoEvaluacion2", "MedidorTraficoyMedidorConsumoEvaluacion2.csproj", "{2974826F-A410-4E21-A0AA-4A7EF413E410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedidorTraficoyMedidorConsumoModel", "..\MedidorTraficoyMedidorConsumoModel\MedidorTraficoyMedidorConsumoModel.csproj", "{BD684953-877E-4D04-8E07-72EEFC71FBF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2974826F-A410-4E21-A0AA-4A7EF413E410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2974826F-A410-4E21-A0AA-4A7EF413E410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2974826F-A410-4E21-A0AA-4A7EF413E410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2974826F-A410-4E21-A0AA-4A7EF413E410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD684953-877E-4D04-8E07-72EEFC71FBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD684953-877E-4D04-8E07-72EEFC71FBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD684953-877E-4D04-8E07-72EEFC71FBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD684953-877E-4D04-8E07-72EEFC71FBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6770F6E9-EAED-4374-99E3-57282230ABDA}
+	EndGlobalSection
+EndGlobal
