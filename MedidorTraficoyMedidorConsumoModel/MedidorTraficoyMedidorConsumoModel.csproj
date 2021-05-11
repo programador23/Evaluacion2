@@ -41,9 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\IMedidorConsumos.cs" />
     <Compile Include="DAL\IMedidorTraficoDAL.cs" />
+    <Compile Include="DAL\MedidorConsumosArchivos.cs" />
     <Compile Include="DAL\MedidorTraficoArchivos.cs" />
     <Compile Include="DAL\MedidorTraficoDALFactory.cs" />
+    <Compile Include="DTO\MedidorConsumo.cs" />
     <Compile Include="DTO\MedidorTrafico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
