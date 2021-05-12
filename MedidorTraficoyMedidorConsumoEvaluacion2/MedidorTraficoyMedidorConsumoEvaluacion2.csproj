@@ -43,11 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MedidorTraficoyMedidorConsumoModel\MedidorTraficoyMedidorConsumoModel.csproj">
+      <Project>{BD684953-877E-4D04-8E07-72EEFC71FBF4}</Project>
+      <Name>MedidorTraficoyMedidorConsumoModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

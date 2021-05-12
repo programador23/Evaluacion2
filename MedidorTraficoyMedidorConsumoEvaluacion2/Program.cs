@@ -60,10 +60,11 @@ namespace MedidorTraficoyMedidorConsumoEvaluacion2
 
 
         }
+
+        private static void Main(string[] args)
+        {
+            while (Menu()) ;
+        }
     }
 
-    private static void Main(string[] args)
-    {
-        while (Menu()) ;
-    }
 }
